@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+ - name: cust_orders
+   database: DBT_RAW
+   schema: JAFFLE_SHOP
+   tables:
+    - name: CUSTOMERS
+    - name: ORDERS
