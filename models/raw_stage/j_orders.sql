@@ -1,4 +1,4 @@
 {{ config(materialized='table') }}
 
-select *
+select DISTINCT *
 from {{source('cust_orders','ORDERS')}}

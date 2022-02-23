@@ -19,3 +19,17 @@ models:
             tests:
                 - unique
                 - not_null
+          - name: status
+            tests:      
+              - accepted_values:
+                  values:
+                    - returned
+                    - completed
+                    - return_pending
+                    - shipped
+                    - placed
+          - name: user_id
+            tests:
+              - relationships:
+                  to: ref('j_customers')
+                  field: id
