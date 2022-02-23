@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+    - name: stage_data
+      database: DBT_RAW
+      schema: DBT_SJ
+      tables:
+        - name: cust_orders
+        - name: raw_cust
+        - name: raw_orders

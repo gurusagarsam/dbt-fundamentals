@@ -1,9 +1,19 @@
 version: 2
 
 sources:
- - name: cust_orders
-   database: DBT_RAW
-   schema: JAFFLE_SHOP
-   tables:
-    - name: CUSTOMERS
-    - name: ORDERS
+  - name: cust_orders
+    database: DBT_RAW
+    schema: JAFFLE_SHOP
+    tables:
+      - name: CUSTOMERS
+      - name: ORDERS
+  - name: payments
+    database: DBT_RAW
+    schema: STRIPE
+    tables:
+      - name: PAYMENT
+  - name: stage_params
+    database: DBT_RAW
+    schema: DBT_SJ
+    tables:
+      - name: stage_params
