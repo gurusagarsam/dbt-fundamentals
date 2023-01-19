@@ -4,6 +4,7 @@ version: 2
 models:
     - name: j_customers
       description: "Customer Model"
+      +copy_grants: true
       columns:
           - name: id
             description: "The primary key for this table"
@@ -13,6 +14,7 @@ models:
 
     - name: j_orders
       description: "Orders Model"
+      +copy_grants: true
       columns:
           - name: id
             description: "The primary key for this table"

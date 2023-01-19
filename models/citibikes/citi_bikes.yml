@@ -7,10 +7,4 @@ sources:
     schema: dbt_sj
     tables:
       - name: citibike_trips
-  
-  - name: citi_bikes
-    description: Raw data from Citi Bikes.
-    database: dbt_raw
-    schema: dbt_sj
-    tables:
       - name: STG_CITIBIKES

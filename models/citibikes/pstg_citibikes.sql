@@ -21,5 +21,5 @@ SELECT T.$1::INT AS TRIPDURATION
      , T.$14::STRING AS USERTYPE
      , T.$15::INT AS BIRTH_YEAR
      , T.$16::INT AS GENDER
-FROM @{{ source('citi_bikes', 'STG_CITIBIKES') }}
+FROM @{{ source('citi_bikes_sj', 'STG_CITIBIKES') }}
      (FILE_FORMAT => CSV_FILE_FORMAT) T
